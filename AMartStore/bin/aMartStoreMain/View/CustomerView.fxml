@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="467.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aMartStoreMain.Controller.CustomerController">
+   <children>
+      <Button layoutX="137.0" layoutY="80.0" mnemonicParsing="false" onAction="#ProdView" prefHeight="49.0" prefWidth="163.0" text="General Products" />
+      <Button layoutX="326.0" layoutY="79.0" mnemonicParsing="false" onAction="#MedicalView" prefHeight="49.0" prefWidth="163.0" text="Medical Products" />
+      <Button layoutX="137.0" layoutY="144.0" mnemonicParsing="false" onAction="#btnApparelsView" prefHeight="49.0" prefWidth="163.0" text="Apparels" />
+      <Button layoutX="326.0" layoutY="144.0" mnemonicParsing="false" onAction="#btnElectronicView" prefHeight="49.0" prefWidth="163.0" text="Electronics" />
+      <TextField fx:id="lowRange" editable="false" layoutX="375.0" layoutY="213.0" prefHeight="25.0" prefWidth="59.0" text="\$ 1" />
+      <TextField fx:id="hiRange" editable="false" layoutX="447.0" layoutY="213.0" onAction="#RangeSelect" prefHeight="25.0" prefWidth="59.0" text="\$ 50" />
+      <Button fx:id="RangeSelect" layoutX="513.0" layoutY="214.0" mnemonicParsing="false" onAction="#RangeSelect" prefHeight="25.0" prefWidth="79.0" text="View" />
+      <TextField fx:id="txtProductId" layoutX="133.0" layoutY="267.0" prefHeight="41.0" prefWidth="69.0" promptText="Prod_ID" />
+      <TextField fx:id="txtProductQty" layoutX="216.0" layoutY="267.0" prefHeight="41.0" prefWidth="69.0" promptText="Quantity" />
+      <Label fx:id="lblID" layoutX="28.0" layoutY="37.0" prefHeight="17.0" prefWidth="109.0" />
+      <Label fx:id="lblUserName" layoutX="244.0" layoutY="37.0" onInputMethodTextChanged="#btnLogin" prefHeight="17.0" prefWidth="93.0" />
+      <Button layoutX="122.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnProdSelection" prefHeight="68.0" prefWidth="156.0" text="My Cart &amp; Payment" />
+      <Button layoutX="285.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnCustHistory" prefHeight="68.0" prefWidth="163.0" text="View My Cart" />
+      <Button layoutX="463.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnbilledOrder" prefHeight="68.0" prefWidth="156.0" text="Billed History" />
+      <Label fx:id="lblCustUserName" layoutX="44.0" layoutY="36.0" prefHeight="17.0" prefWidth="156.0" />
+      <Label fx:id="lblCustUserName" layoutX="99.0" layoutY="35.0" prefHeight="17.0" prefWidth="126.0" text="UserName">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#d31706" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label fx:id="lblCustUserId" layoutX="82.0" layoutY="17.0" prefHeight="17.0" prefWidth="108.0" text="ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#d31706" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="8.0" layoutY="17.0" prefHeight="27.0" prefWidth="93.0" text="User ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#d31706" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="6.0" layoutY="35.0" prefHeight="27.0" prefWidth="93.0" text="Welcome">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#d31706" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Button fx:id="closeButton" layoutX="493.0" layoutY="31.0" mnemonicParsing="false" onAction="#processLogout" text="Log Out" />
+      <Label fx:id="ItemAdded" layoutX="220.0" layoutY="404.0" prefHeight="49.0" prefWidth="417.0" />
+      <Label layoutX="130.0" layoutY="213.0" prefHeight="27.0" prefWidth="231.0" text="Products within the Range">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

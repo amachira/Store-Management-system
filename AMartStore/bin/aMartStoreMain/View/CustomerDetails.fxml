@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="578.0" prefWidth="682.0" stylesheets="@../Controller/application1.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aMartStoreMain.Controller.addCustomerController">
+   <children>
+      <Pane layoutX="55.0" layoutY="55.0" prefHeight="51.0" prefWidth="141.0">
+         <children>
+            <Label layoutX="35.0" layoutY="12.0" text="Customer ID">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Pane>
+      <Pane layoutX="62.0" layoutY="108.0" prefHeight="51.0" prefWidth="177.0">
+         <children>
+            <Label layoutX="23.0" layoutY="12.0" prefHeight="27.0" prefWidth="141.0" text="Customer Name">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+      <Pane layoutX="53.0" layoutY="163.0" prefHeight="51.0" prefWidth="141.0">
+         <children>
+            <Label layoutX="33.0" layoutY="1.0" prefHeight="36.0" prefWidth="130.0" text="Customer City">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="53.0" layoutY="204.0" prefHeight="51.0" prefWidth="141.0">
+         <children>
+            <Label layoutX="36.0" layoutY="8.0" prefHeight="36.0" prefWidth="141.0" text="Contact Number">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtCustomerID" layoutX="241.0" layoutY="64.0" prefHeight="34.0" prefWidth="189.0" />
+      <TextField fx:id="txtCustomerName" layoutX="240.0" layoutY="116.0" prefHeight="34.0" prefWidth="189.0" />
+      <TextField fx:id="txtCustomerCity" layoutX="241.0" layoutY="163.0" prefHeight="34.0" prefWidth="189.0" />
+      <TextField fx:id="txtContactNumber" layoutX="241.0" layoutY="212.0" prefHeight="34.0" prefWidth="189.0" />
+      <ChoiceBox fx:id="usertype" layoutX="240.0" layoutY="255.0" prefHeight="25.0" prefWidth="99.0" />
+      <Button fx:id="save" layoutX="195.0" layoutY="303.0" mnemonicParsing="false" onAction="#save" prefHeight="36.0" prefWidth="88.0" text="Add" />
+      <Button layoutX="361.0" layoutY="303.0" mnemonicParsing="false" onAction="#update" prefHeight="36.0" prefWidth="88.0" text="Update" />
+      <Button layoutX="271.0" layoutY="385.0" mnemonicParsing="false" onAction="#delete" text="Delete">
+         <graphic>
+            <TextField fx:id="txtCustomerID1" prefHeight="34.0" prefWidth="189.0" promptText="Customer Id" />
+         </graphic></Button>
+      <Separator layoutX="-1.0" layoutY="364.0" prefHeight="8.0" prefWidth="682.0" />
+      <Separator layoutY="455.0" prefHeight="8.0" prefWidth="682.0" />
+      <Button layoutX="283.0" layoutY="491.0" mnemonicParsing="false" onAction="#open" prefHeight="36.0" prefWidth="96.0" text="View" />
+      <Button fx:id="closeButton" layoutX="281.0" layoutY="15.0" mnemonicParsing="false" onAction="#btnMainView" text="Main View" />
+      <Label layoutX="2.0" layoutY="382.0" prefHeight="60.0" prefWidth="291.0" text="Enter the Customer ID to delete" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="250.0" prefHeight="36.0" prefWidth="141.0" text="Admin Access">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="180.0" fitWidth="209.0" layoutX="456.0" layoutY="72.0">
+         <image>
+            <Image url="@../../../../../Downloads/network1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

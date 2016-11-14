@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="383.0" prefWidth="551.0" stylesheets="@../Controller/application1.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aMartStoreMain.Controller.AdminController">
+   <children>
+      <Button fx:id="closeButton1" layoutX="203.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnCustDetails" prefHeight="49.0" prefWidth="170.0" text="Customers" />
+      <Button fx:id="closeButton2" layoutX="207.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnProdDetails" prefHeight="49.0" prefWidth="170.0" text="Products" />
+      <Button fx:id="closeButton3" layoutX="207.0" layoutY="238.0" mnemonicParsing="false" onAction="#btnSuppDetails" prefHeight="49.0" prefWidth="170.0" text="Suppliers" />
+      <Button fx:id="closeButton4" layoutX="210.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnCustBilling" prefHeight="49.0" prefWidth="170.0" text="Billing" />
+      <Button fx:id="closeButton" layoutX="432.0" layoutY="22.0" mnemonicParsing="false" onAction="#processLogout" text="Log Out" />
+      <Label fx:id="lblAdminUserName" layoutX="102.0" layoutY="59.0" prefHeight="17.0" prefWidth="126.0" text="UserName">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblAdminUserId" layoutX="100.0" layoutY="41.0" prefHeight="27.0" prefWidth="97.0" text="ID">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="40.0" prefHeight="17.0" prefWidth="69.0" text="User ID">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="58.0" prefHeight="27.0" prefWidth="97.0" text="Welcome">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="156.0" fitWidth="152.0" layoutX="5.0" layoutY="119.0">
+         <image>
+            <Image url="@../../../../../Downloads/2af2c2ab53e00556f5f2195b31d59400.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="143.0" layoutX="211.0" layoutY="7.0">
+         <image>
+            <Image url="@../../../../../Downloads/admin1.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

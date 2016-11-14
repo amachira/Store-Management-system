@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane layoutX="-1.0" prefHeight="578.0" prefWidth="682.0" stylesheets="@../Controller/application1.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aMartStoreMain.Controller.addProductController">
+   <children>
+      <Pane layoutX="125.0" layoutY="60.0" prefHeight="51.0" prefWidth="141.0">
+         <children>
+            <Label layoutX="5.0" layoutY="14.0" text="Product ID">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="107.0" layoutY="109.0" prefHeight="51.0" prefWidth="159.0">
+         <children>
+            <Label layoutX="20.0" layoutY="17.0" prefHeight="27.0" prefWidth="131.0" text="Product Name">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="125.0" layoutY="165.0" prefHeight="51.0" prefWidth="141.0">
+         <children>
+            <Label layoutY="14.0" text="Product Stock Qty">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="107.0" layoutY="212.0" prefHeight="51.0" prefWidth="141.0">
+         <children>
+            <Label layoutX="16.0" layoutY="15.0" text="Product Amount">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtProductID" layoutX="284.0" layoutY="70.0" prefHeight="34.0" prefWidth="189.0" />
+      <TextField fx:id="txtProductName" layoutX="283.0" layoutY="121.0" prefHeight="34.0" prefWidth="189.0" />
+      <TextField fx:id="txtProductStockQty" layoutX="284.0" layoutY="173.0" prefHeight="34.0" prefWidth="189.0" />
+      <TextField fx:id="txtProductAmount" layoutX="284.0" layoutY="220.0" prefHeight="34.0" prefWidth="189.0" />
+      <Button layoutX="265.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnProdAdd" prefHeight="36.0" prefWidth="87.0" text="Add" />
+      <Button layoutX="412.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnProdUpdate" text="Update" />
+      <Button layoutX="267.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnProdDelete" text=" Delete Product ">
+         <graphic>
+            <TextField fx:id="txtProductID1" prefHeight="34.0" prefWidth="165.0" promptText="Product id" />
+         </graphic></Button>
+      <Button fx:id="closeButton1" layoutX="316.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnMainView1" text="Main View" />
+      <Separator layoutX="7.0" layoutY="385.0" prefHeight="17.0" prefWidth="682.0" />
+      <Separator layoutX="10.0" layoutY="456.0" prefHeight="17.0" prefWidth="682.0" />
+      <Button layoutX="267.0" layoutY="473.0" mnemonicParsing="false" onAction="#btnProdView" prefHeight="36.0" prefWidth="168.0" text="View All Products" />
+      <Label layoutX="126.0" layoutY="270.0" prefHeight="27.0" prefWidth="109.0" text="Supplier ID">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtSupplierID" layoutX="284.0" layoutY="267.0" prefHeight="34.0" prefWidth="189.0" />
+      <Button layoutX="79.0" layoutY="528.0" mnemonicParsing="false" onAction="#SuppElecView" prefHeight="36.0" prefWidth="109.0" text="Electronic" />
+      <Button layoutX="500.0" layoutY="528.0" mnemonicParsing="false" onAction="#SuppGeneralView" prefHeight="36.0" prefWidth="109.0" text="General" />
+      <Button layoutX="353.0" layoutY="528.0" mnemonicParsing="false" onAction="#SuppMedicalView" prefHeight="36.0" prefWidth="109.0" text="Medical" />
+      <Button layoutX="212.0" layoutY="528.0" mnemonicParsing="false" onAction="#SuppApparelView" prefHeight="36.0" prefWidth="109.0" text="Apparels" />
+      <Label layoutX="126.0" layoutY="321.0" prefHeight="27.0" prefWidth="109.0" text="Category">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Category" layoutX="281.0" layoutY="316.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="398.0" prefHeight="60.0" prefWidth="291.0" text="Enter the Product ID to delete" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
